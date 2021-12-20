@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    color: #fff;
+}
+
+header > nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.nav_boton{
+    margin-left: 70px;
+    padding: 8px 10px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border: 2px solid #fff;
+}
+
+.nav_obciones{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    font-size: 18px;
+}
+
+.nav_equis{
+    display: none;
+}
+
+.inputC{
+    display: none;
+}
+
+.nav_home{
+    border-bottom: 4px solid #fff;
+}
+
+.menu{
+    width: 0;
+    height: 0;
+}
+
+section{
+    display: flex;
+    margin-top: 150px;
+}
+
+.info{
+    display: block;
+    width: 43%;
+}
+
+.info_titulo{
+    margin: 140px 0 50px 50px;
+    font-size: 46px;
+}
+
+.info_conte{
+    margin: 50px 0 50px 50px;
+    width: 400px;
+    font-family: sans-serif;
+    font-size: 24px;
+}
+
+.info_flecha{
+    margin-left: 50px;
+    font-size: 22px;
+    font-family: serif;
+}
+
+.icono{
+    width: 20px;
+    transform: rotate(180deg);
+    margin-left: 20px;
+}
+
+.img1{
+    width: 110%;
+    height: 500px;
+    z-index: 1;
+}
+
+.persona{
+    width: 490px;
+    height: 220px;
+    background-color: #222;
+    padding: 10px 10px 40px 20px;
+    box-shadow: 3px 5px 8px #000;
+    margin-top: -40px;
+    position: relative;
+    z-index: 5;
+    top: -110px;
+    left: 200px;
+}
+
+.persona > h2{
+    margin: 40px 140px 0 33px;
+    font-size: 30px;
+}
+
+.persona_info{
+    display: flex;
+    margin: 20px 33px;
+}
+
+.img2{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.persona_nombre{
+    margin: 20px;
+}
+
+.persona_nombre > h1{
+    color: #ddd;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+
+.persona_nombre > p{
+    font-family: sans-serif;
+    color: #999;
+}
+
+.pie{
+    margin: 150px 0 20px 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .persona{
+        width: 330px;
+        left: 150px;
+    }
+
+    .persona > h2{
+        margin: 40px 40px 0 33px;
+        font-size: 25px;
+    }
+
+
+
+    .img1{
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+
+    section{
+        display: block;
+    }
+
+    .img1{
+        width: 85%;
+        height: 500px;
+        margin-left: 90px;
+        margin-top: 50px;
+    }
+    
+    .persona{
+        left: 350px;
+        right: 30px;
+    }
+}
+
+@media screen and (max-width:720px) {
+    
+    .nav_obciones{
+        display: none;
+    }
+
+    .inputC:checked + .nav_obciones{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        background-color: #222;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 30;
+    }
+
+    .nav_equis{
+        display: block;
+        width: 100%;
+        margin-top: -20px;
+        text-align: right;
+    }
+
+    .equis{
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .menu{
+        width: 70px;
+        height: 40px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .img1{
+        margin-left: 20px;
+    }
+
+    .persona{
+        padding: 10px;
+        width: 280px;
+        left: 250px;
+    }
+
+    .persona_nombre{
+        margin: 8px;
+    }
+
+    .persona_nombre > h1{
+        margin-top: 5px;
+        font-size: 15px;
+    }
+
+    .persona_nombre > p{
+        margin-top: 30px;
+        font-size: 15px;
+    }
+
+    .persona_info > h2{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 556px) {
+
+    .imagen_img1{
+        width: 100%;
+        margin: 0;
+    }
+
+    .img1{
+        width: 95%;
+    }
+
+}
